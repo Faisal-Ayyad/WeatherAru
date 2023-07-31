@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .chat{
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .chat img{
+    width: 35px;
+    height: 35px;
+  }
+  
+  .response{
+    background-color: #eb75d0;
+  }
+  
+  .messagebar{
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #494b59;
+    background-color: #2a2a2a;
+  }
+  
+  .messagebar .bar-wrapper{
+    background-color: #63646d;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bar-wrapper input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    color: #ccc;
+  }
+  
+  .bar-wrapper input::placeholder{
+    color: #ccc;
+  }
+  
+  .messagebar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .message-box{
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+  }
+  
+  
+  .demo-bar {
+    background-color: hsl(45, 65%, 70%);
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .demo-bar a {
+    color: #0073e6;
+    text-decoration: underline;
+  }
+  
+  .chatbox-wrapper {
+    margin-top: 40px; /* Adjust as needed to match the height of the demo-bar */
+  }
+  
+  .copyright-bar {
+    background-color: #e0e0e0;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    top: 37px; /* Position below the demo-bar */
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+  }
+  
+  .chatbox-wrapper {
+    margin-top: 60px; /* Adjust to clear both bars */
+  }
+  
